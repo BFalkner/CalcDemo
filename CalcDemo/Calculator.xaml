@@ -1,0 +1,49 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Title="Calculator"
+        WindowStyle="SingleBorderWindow"
+        SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Width="177" Height="188" Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBox Text="{Binding Path=Display, Mode=OneWay}" Grid.ColumnSpan="5" Grid.Row="0" Margin="2,5,2,5" IsReadOnly="True" FontSize="20" TextAlignment="Right">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="White" Offset="0.4" />
+                    <GradientStop Color="WhiteSmoke" Offset="0.6" />
+                    <GradientStop Color="#FFE8E8E8" Offset="1" />
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Command="{Binding Path=Input}" CommandParameter="1" Content="1" Margin="2" Grid.Row="1" Grid.Column="0" />
+        <Button Command="{Binding Path=Input}" CommandParameter="2" Content="2" Margin="2" Grid.Row="1" Grid.Column="1" />
+        <Button Command="{Binding Path=Input}" CommandParameter="3" Content="3" Margin="2" Grid.Row="1" Grid.Column="2" />
+        <Button Command="{Binding Path=Input}" CommandParameter="4" Content="4" Margin="2" Grid.Row="2" Grid.Column="0" />
+        <Button Command="{Binding Path=Input}" CommandParameter="5" Content="5" Margin="2" Grid.Row="2" Grid.Column="1" />
+        <Button Command="{Binding Path=Input}" CommandParameter="6" Content="6" Margin="2" Grid.Row="2" Grid.Column="2" />
+        <Button Command="{Binding Path=Input}" CommandParameter="7" Content="7" Margin="2" Grid.Row="3" Grid.Column="0" />
+        <Button Command="{Binding Path=Input}" CommandParameter="8" Content="8" Margin="2" Grid.Row="3" Grid.Column="1" />
+        <Button Command="{Binding Path=Input}" CommandParameter="9" Content="9" Margin="2" Grid.Row="3" Grid.Column="2" />
+        <Button Command="{Binding Path=Input}" CommandParameter="0" Content="0" Margin="2" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" />
+        <Button Command="{Binding Path=Input}" CommandParameter="." Content="." Margin="2" Grid.Row="4" Grid.Column="2" />
+        <Button Command="{Binding Path=Operation}" CommandParameter="+" Content="+" Grid.Column="3" Grid.Row="1" Margin="2" />
+        <Button Command="{Binding Path=Operation}" CommandParameter="-" Content="-" Grid.Column="3" Grid.Row="2" Margin="2" />
+        <Button Command="{Binding Path=Operation}" CommandParameter="*" Content="*" Grid.Column="3" Grid.Row="3" Margin="2" Padding="1,5,1,1" />
+        <Button Command="{Binding Path=Operation}" CommandParameter="/" Content="/" Grid.Column="3" Grid.Row="4" Margin="2" />
+        <Button Command="{Binding Path=Operation}" CommandParameter="=" Content="=" Grid.Column="4" Grid.Row="3" Grid.RowSpan="2" Margin="2" />
+        <Button Command="{Binding Path=Operation}" CommandParameter="CE" Content="CE" Grid.Column="4" Grid.Row="1" Margin="2" />
+        <Button Command="{Binding Path=Operation}" CommandParameter="C" Content="C" Grid.Column="4" Grid.Row="2" Margin="2" />
+    </Grid>
+</Window>

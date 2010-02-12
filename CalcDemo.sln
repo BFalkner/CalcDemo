@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CalcDemo", "CalcDemo\CalcDemo.fsproj", "{DBA0DE29-1991-4B54-88E4-BB33E727409B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBA0DE29-1991-4B54-88E4-BB33E727409B}.Debug|x86.ActiveCfg = Debug|x86
+		{DBA0DE29-1991-4B54-88E4-BB33E727409B}.Debug|x86.Build.0 = Debug|x86
+		{DBA0DE29-1991-4B54-88E4-BB33E727409B}.Release|x86.ActiveCfg = Release|x86
+		{DBA0DE29-1991-4B54-88E4-BB33E727409B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
